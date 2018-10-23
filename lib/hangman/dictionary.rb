@@ -1,11 +1,15 @@
 module Hangman
   module Dictionary
-    WORDS = %w{
-      banana avocado apple chocolate froyo peanut
-    }
+    WORDS = File.readlines("food_words", chomp: true)
+    LONG_WORDS = []
+    WORDS.each do |word|
+    	if word.length >= 6
+    		LONG_WORDS.push(word)
+    	end
+    end
 
     def self.random
-      WORDS.sample
+      LONG_WORDS.sample.strip
     end
   end
 end
