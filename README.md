@@ -2,7 +2,7 @@
 
 1. Clone the repo:
     ```
-    git clone https://github.com/coffeejunk/hangman.git
+    git clone https://github.com/AbbiAld/hangman.git
     ```
 2. Install all dependencies
     ```
